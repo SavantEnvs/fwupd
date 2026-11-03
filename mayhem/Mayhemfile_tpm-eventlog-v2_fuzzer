@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: tpm-eventlog-v2_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/tpm-eventlog-v2_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/tpm-eventlog-v2_fuzzer
+    libfuzzer: true

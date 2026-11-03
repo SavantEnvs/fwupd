@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: json_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/json_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/json_fuzzer
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: usb-device_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/usb-device_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/usb-device_fuzzer
+    libfuzzer: true

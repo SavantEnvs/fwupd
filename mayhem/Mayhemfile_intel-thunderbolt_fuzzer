@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: intel-thunderbolt_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/intel-thunderbolt_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/intel-thunderbolt_fuzzer
+    libfuzzer: true

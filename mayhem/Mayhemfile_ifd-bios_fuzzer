@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: ifd-bios_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ifd-bios_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/ifd-bios_fuzzer
+    libfuzzer: true

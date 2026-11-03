@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: fmap_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fmap_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/fmap_fuzzer
+    libfuzzer: true

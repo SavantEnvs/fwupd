@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: amd-afc_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/amd-afc_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/amd-afc_fuzzer
+    libfuzzer: true

@@ -1,0 +1,10 @@
+# Keeps .git (full history) and every tracked file; drops only gitignored local build output.
+/build
+/build-win32
+/build-dir
+/dist
+/.flatpak-builder
+/repo
+/parts
+/prime
+/stage

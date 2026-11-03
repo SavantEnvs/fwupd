@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: pixart-rf_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pixart-rf_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/pixart-rf_fuzzer
+    libfuzzer: true

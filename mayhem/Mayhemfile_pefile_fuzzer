@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: pefile_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/pefile_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/pefile_fuzzer
+    libfuzzer: true

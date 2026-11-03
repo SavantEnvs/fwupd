@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: synaptics-cape_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/synaptics-cape_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/synaptics-cape_fuzzer
+    libfuzzer: true

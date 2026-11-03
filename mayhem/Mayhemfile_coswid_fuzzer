@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: coswid_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/coswid_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/coswid_fuzzer
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: elantp_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/elantp_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/elantp_fuzzer
+    libfuzzer: true

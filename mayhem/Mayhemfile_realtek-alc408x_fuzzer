@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: realtek-alc408x_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/realtek-alc408x_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/realtek-alc408x_fuzzer
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: synaptics-rmi_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/synaptics-rmi_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/synaptics-rmi_fuzzer
+    libfuzzer: true

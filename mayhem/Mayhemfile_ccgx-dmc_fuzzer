@@ -1,0 +1,8 @@
+project: savantenvs/fwupd
+target: ccgx-dmc_fuzzer
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ccgx-dmc_fuzzer/testsuite
+cmds:
+  - cmd: /mayhem/ccgx-dmc_fuzzer
+    libfuzzer: true
